@@ -72,6 +72,12 @@ if __name__ == '__main__':
             # For testing purposes, just add 2
             current_balance += 2
 
+            # Set balance to adjusted balance
+            self.balance.set(current_balance)
+
+            # Edit label so user can see their balance
+            self.balance_label.configure(text="Balance: {}".format(current_balance))
+
 # main routine
 if __name__ == "__main__":
     root = Tk()
