@@ -84,10 +84,25 @@ class Start:
             elif starting_balance < 10 and (stakes == 2 or stakes == 3):
                 has_errors = "yes"
                 error_feedback = "Sorry, you can only afford to " \
+                                 "play a low stakes game."
+            elif starting_balance < 15 and stakes == 3:
+                has_errors = "yes"
+                error_feedback = "Sorry, you can only afford to " \
                                  "play a low or medium stakes game."
-                
 
+        except ValueError:
+            has_errors = "yes"
+            error_feedback = "Please enter a dollar amount (no text / decimals)"
 
+        if has_errors == "yes":
+            self.start_amount_entry.config(bg=error_back)
+            self.amount_error_label.config(text=error_feedback)
+
+        else:
+            Game(self, stakes, starting_balance)
+
+            # hide start up window
+            # root.withdraw()
 
 class Game:
     def __init__(self, partner, stakes, starting_balance):
