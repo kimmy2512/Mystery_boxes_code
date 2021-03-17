@@ -65,7 +65,7 @@ class Start:
         self.high_stakes_button = Button(self.stakes_frame, text="High ($15)",
                                        command=lambda: self.to_game(3),
                                        font=button_font, bg="#99FF33")
-        self.high_takes_button.grid(row=0, column=2, pady=10)
+        self.high_stakes_button.grid(row=0, column=2, pady=10)
 
         # Disable all stakes buttons at start
         self.low_stakes_button.config(state=DISABLED)
@@ -190,6 +190,6 @@ class Game:
 # main routine
 if __name__ == "__main__":
     root = Tk()
-    root.title("title goes here")
+    root.title("Mystery Box Game")
     something = Start(root)
     root.mainloop()
