@@ -29,7 +29,7 @@ class Start:
         self.entry_error_frame = Frame(self.start_frame, width=200)
         self.entry_error_frame.grid(row=2)
 
-        self.start_amount_entry = Entry(self.start_frame, font="Arial 19 bold", width=10)
+        self.start_amount_entry = Entry(self.entry_error_frame, font="Arial 19 bold", width=10)
         self.start_amount_entry.grid(row=0, column=0)
 
         self.add_funds_button = Button(self.entry_error_frame,
@@ -107,15 +107,15 @@ class Start:
                                  "this game is $50"
             elif starting_balance >= 15:
                 # enable all buttons
-                self.low_stakes_button.config(stakes=NORMAL)
-                self.medium_stakes_button.config(stakes=NORMAL)
-                self.high_stakes_button.config(stakes=NORMAL)
+                self.low_stakes_button.config(state=NORMAL)
+                self.medium_stakes_button.config(state=NORMAL)
+                self.high_stakes_button.config(state=NORMAL)
             elif starting_balance >= 10:
                 # enable low and medium stakes buttons
-                self.low_stakes_button.config(stakes=NORMAL)
-                self.medium_stakes_button.config(stakes=NORMAL)
+                self.low_stakes_button.config(state=NORMAL)
+                self.medium_stakes_button.config(state=NORMAL)
             else:
-                self.low_stakes_button.config(stakes=NORMAL)
+                self.low_stakes_button.config(state=NORMAL)
 
         except ValueError:
             has_errors = "yes"
