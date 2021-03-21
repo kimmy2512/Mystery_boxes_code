@@ -42,7 +42,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="03_game_GUI_v1.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="03_game_GUI_v1.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/03_game_GUI_v1.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="544">
@@ -52,11 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="04_Prize_generation_v1.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="04_Prize_generation_v1.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/04_Prize_generation_v1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="170">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -92,9 +92,9 @@
       <list>
         <option value="$PROJECT_DIR$/02_start_GUI_v1.py" />
         <option value="$PROJECT_DIR$/AA_compiled_game_v1.py" />
-        <option value="$PROJECT_DIR$/04_Prize_generation_v1.py" />
         <option value="$PROJECT_DIR$/01_mystery_skeleton_v1.py" />
         <option value="$PROJECT_DIR$/03_game_GUI_v1.py" />
+        <option value="$PROJECT_DIR$/04_Prize_generation_v1.py" />
       </list>
     </option>
   </component>
@@ -455,14 +455,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/04_Prize_generation_v1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/01_mystery_skeleton_v1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="790">
@@ -485,6 +477,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04_Prize_generation_v1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
