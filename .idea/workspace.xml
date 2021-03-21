@@ -62,11 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="04_Prize_generation_v2.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="04_Prize_generation_v2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/04_Prize_generation_v2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+            <state relative-caret-position="238">
+              <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -75,8 +75,18 @@
       <file leaf-file-name="04_Prize_generation_v3.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/04_Prize_generation_v3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+            <state relative-caret-position="374">
+              <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="04_Prize_generation_v4.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/04_Prize_generation_v4.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="595">
+              <caret line="35" column="24" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -117,6 +127,7 @@
         <option value="$PROJECT_DIR$/04_Prize_generation_v1.py" />
         <option value="$PROJECT_DIR$/04_Prize_generation_v3.py" />
         <option value="$PROJECT_DIR$/04_Prize_generation_v2.py" />
+        <option value="$PROJECT_DIR$/04_Prize_generation_v4.py" />
       </list>
     </option>
   </component>
@@ -184,7 +195,7 @@
       <recent name="C:\Users\kime69800\OneDrive - Massey High School\Old School Files\Documents\COM301\01_Programming\Mystery_boxes_code" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.04_Prize_generation_v3">
+  <component name="RunManager" selected="Python.04_Prize_generation_v4">
     <configuration default="false" name="02_start_GUI_v1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -232,6 +243,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Mystery_boxes_code" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/04_Prize_generation_v3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="04_Prize_generation_v4" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Mystery_boxes_code" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/04_Prize_generation_v4.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -370,16 +398,18 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Python.02_start_GUI_v1" />
       <item index="1" class="java.lang.String" itemvalue="Python.AA_compiled_game_v1" />
       <item index="2" class="java.lang.String" itemvalue="Python.04_Prize_generation_v3" />
+      <item index="3" class="java.lang.String" itemvalue="Python.04_Prize_generation_v4" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python.04_Prize_generation_v3" />
-        <item index="1" class="java.lang.String" itemvalue="Python.AA_compiled_game_v1" />
-        <item index="2" class="java.lang.String" itemvalue="Python.02_start_GUI_v1" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Python.04_Prize_generation_v4" />
+        <item index="1" class="java.lang.String" itemvalue="Python.04_Prize_generation_v3" />
+        <item index="2" class="java.lang.String" itemvalue="Python.AA_compiled_game_v1" />
+        <item index="3" class="java.lang.String" itemvalue="Python.02_start_GUI_v1" />
       </list>
     </recent_temporary>
   </component>
@@ -530,18 +560,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/04_Prize_generation_v3.py">
+    <entry file="file://$PROJECT_DIR$/04_Prize_generation_v2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+        <state relative-caret-position="238">
+          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/04_Prize_generation_v2.py">
+    <entry file="file://$PROJECT_DIR$/04_Prize_generation_v3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+        <state relative-caret-position="374">
+          <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04_Prize_generation_v4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="24" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
           <folding />
         </state>
       </provider>
