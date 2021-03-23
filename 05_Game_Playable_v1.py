@@ -10,8 +10,9 @@ class Start:
         self.start_frame = Frame(padx=10, pady=10)
         self.start_frame.grid()
 
-        self.push_me_button = Button(text="Push Me", command=self.to_game)
-        self.push_me_button.grid(row=0, pady=10)
+        self.push_button = Button(self.start_frame, text="Push Now",
+                                  command=self.to_game)
+        self.push_button.grid(row=1)
 
     def to_game(self):
 
@@ -66,19 +67,23 @@ class Game:
         box_back = "#b9ea96"    # light green
         box_width = 5
 
+        # Boxes go here (row 2)
+
         self.box_frame = Frame(self.game_frame)
         self.box_frame.grid(row=2, pady=10)
 
-        self.prize1_label = Label(self.box_frame, text="?\n", font=box_text,
-                                  bg=box_back, width=box_width, padx=10, pady=10)
+        photo = PhotoImage(file="question.gif")
+
+        self.prize1_label = Label(self.box_frame, image=photo, padx=10, pady=10)
+        self.prize1_label.photo = photo
         self.prize1_label.grid(row=0, column=0)
 
-        self.prize2_label = Label(self.box_frame, text="?\n", font=box_text,
-                                  bg=box_back, width=box_width, padx=10, pady=10)
+        self.prize2_label = Label(self.box_frame, image=photo, padx=10, pady=10)
+        self.prize2_label.photo = photo
         self.prize2_label.grid(row=0, column=1, padx=10)
 
-        self.prize3_label = Label(self.box_frame, text="?\n", font=box_text,
-                                  bg=box_back, width=box_width, padx=10, pady=10)
+        self.prize3_label = Label(self.box_frame, image=photo, padx=10, pady=10)
+        self.prize3_label.photo = photo
         self.prize3_label.grid(row=0, column=2)
 
         # Play button goes here (ro1 3)
@@ -134,19 +139,19 @@ class Game:
             prize_num = random.randint(1,100)
 
             if 0 < prize_num <= 5:
-                prize= "gold\n(${})".format(5* stakes_multiplier)
-                back_color = "#CEA935"    # Gold colour
+                prize = PhotoImage(file="gold.gif")
+                prize_list= "gold\n(${})".format(5* stakes_multiplier)
                 round_winnings += 5 * stakes_multiplier
-            elif 5 < prize_num <= 35:
-                prize= "silver\n(${})".format(2* stakes_multiplier)
-                back_color = "#B7B7B5"    # Silver colour
+            elif 5 < prize_num <= 25:
+                prize = PhotoImage(file="silver.gif")
+                prize_list= "silver\n(${})".format(2* stakes_multiplier)
                 round_winnings += 2 * stakes_multiplier
             elif 25 < prize_num <= 65:
-                prize= "copper\n(${})".format(1* stakes_multiplier)
-                back_color = "#BC7F61"    # Copper colour
+                prize = PhotoImage(file="copper.gif")
+                prize_list= "copper\n(${})".format(1* stakes_multiplier)
                 round_winnings += stakes_multiplier
             else:
-                prize= "lead\n($0)"
+                prize = PhotoImage(file="lead.gif")
                 back_color = "#595E71"    # Lead colour
 
             prizes.append(prize)
