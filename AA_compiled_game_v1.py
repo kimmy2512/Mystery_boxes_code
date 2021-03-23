@@ -76,11 +76,6 @@ class Start:
         self.medium_stakes_button.config(state=DISABLED)
         self.high_stakes_button.config(state=DISABLED)
 
-        # Help Button
-        self.help_button = Button(self.start_frame, text="How to Play",
-                                  bg="#808080", fg="white", font=button_font)
-        self.help_button.grid(row=4, pady=10)
-
     def check_funds(self):
         starting_balance = self.start_amount_entry.get()
 

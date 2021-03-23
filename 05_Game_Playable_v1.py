@@ -20,10 +20,9 @@ class Start:
         starting_balance = 50
         stakes = 2
 
-        Game(self, stakes, starting_balance)
-
         # hide start up window
         self.start_frame.destroy()
+        Game(self, stakes, starting_balance)
 
 class Game:
     def __init__(self, partner, stakes, starting_balance):
@@ -38,6 +37,9 @@ class Game:
         # Get value of stakes (use it as a multiplier when calculating winnings)
         self.multiplier = IntVar()
         self.multiplier.set(stakes)
+
+        # List for holding stats
+        self.round_stats_list = []
 
         # GUI Setup
         self.game_box = Toplevel()
@@ -152,17 +154,22 @@ class Game:
                 round_winnings += stakes_multiplier
             else:
                 prize = PhotoImage(file="lead.gif")
-                back_color = "#595E71"    # Lead colour
+                prize_list = "lead ($0)"
 
             prizes.append(prize)
-            backgrounds.append(back_color)
+            stats_prizes.append(prize_list)
+
+            photo1 = prizes[0]
+            photo2 = prizes[1]
+            photo3 = prizes[2]
 
         # Display prizes & edit background...
-        self.prize1_label.config(text=prizes[0], bg=backgrounds[0])
-
-        self.prize2_label.config(text=prizes[1], bg=backgrounds[1])
-
-        self.prize3_label.config(text=prizes[2], bg=backgrounds[2])
+        self.prize1_label.config(image=photo1)
+        self.prize1_label.photo = photo1
+        self.prize2_label.config(image=photo2)
+        self.prize2_label.photo = photo2
+        self.prize3_label.config(image=photo3)
+        self.prize3_label.photo = photo3
 
         # Deduct cost of game
         current_balance -= 5 * stakes_multiplier
