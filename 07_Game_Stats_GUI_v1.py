@@ -101,14 +101,14 @@ class GameStats:
         self.current_balance_label.grid(row=1, column=0, padx=0)
 
         self.current_balance_value_label = Label(self.details_frame, font=content,
-                                                 text="${}".format(game_stats[1]),
+                                                 text="${}".format(game_stats[0]),
                                                  anchor="w")
         self.current_balance_value_label.grid(row=0, column=1, padx=0)
 
         if game_stats[1] > game_stats[0]:
             win_loss = "Amount Won:"
             amount = game_stats[1] - game_stats[0]
-            win_loss_fg = "#660000"
+            win_loss_fg = "green"
         else:
             win_loss = "Amount Lost:"
             amount = game_stats[0] - game_stats[1]
@@ -121,8 +121,7 @@ class GameStats:
         self.wind_loss_label.grid(row=2, column=0, padx=0)
 
         self.wind_loss_value_label = Label(self.details_frame, font=content,
-                                           text="${}".format(amount),
-                                           fg=win_loss_fg, anchor="w")
+                                           text=len(game_history), anchor="w")
         self.wind_loss_value_label.grid(row=2, column=1, padx=0)
 
         # rounds played (row 2.4)
