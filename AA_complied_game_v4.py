@@ -295,7 +295,7 @@ class Game:
         round_winnings = 0
         prizes = []
         stats_prizes = []
-        
+
 
         for item in range(0,3):
             prize_num = random.randint(1,100)
