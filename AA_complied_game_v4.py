@@ -132,7 +132,7 @@ class Start:
         # retrieve starting balance
         starting_balance = self.starting_funds.get()
 
-        Game(self, stakes, starting_balance)
+        # Game(self, stakes, starting_balance)
 
         # hide start up window
         root.withdraw()
@@ -264,7 +264,7 @@ class Game:
 
         self.balance_label = Label(self.game_frame, font="Arial 12 bold", fg="green",
                                    text=start_text, wrap=300,
-                                   justfiy=LEFT)
+                                   justify=LEFT)
         self.balance_label.grid(row=4, pady=10)
 
         # Help and Game stats button (row 5)
