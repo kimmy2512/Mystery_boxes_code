@@ -353,6 +353,16 @@ class Game:
                                                           round_winnings,
                                                           current_balance)
 
+        # Add round results to stats list
+        round_summary = "{} | {} | {} - Cost: ${} \n" \
+                        "Payback: ${} | Current Balance: " \
+                        "${}".format(stats_prizes[0], stats_prizes[1],
+                                     stats_prizes[2],
+                                     5 * stakes_multiplier, round_winnings,
+                                     current_balance)
+        self.round_stats_list.append(round_summary)
+        print(self.round_stats_list)
+
         # Edit label so user can see their balance
         self.balance_label.configure(text=balance_statement)
 
