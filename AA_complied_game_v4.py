@@ -273,7 +273,7 @@ class Game:
 
         self.help_button = Button(self.help_export_frame, text="Help / Rules",
                                   font="Arial 15 bold",
-                                  bg="#808080", fg="white")
+                                  bg="#808080", fg="white", command=self.help)
         self.help_button.grid(row=0, column=0, padx=2)
 
         self.stats_button = Button(self.help_export_frame, text="Game Stats...",
@@ -324,9 +324,9 @@ class Game:
             prizes.append(prize)
             stats_prizes.append(prize_list)
 
-            photo1 = prizes[0]
-            photo2 = prizes[1]
-            photo3 = prizes[2]
+        photo1 = prizes[0]
+        photo2 = prizes[1]
+        photo3 = prizes[2]
 
         # Display prizes & edit background...
         self.prize1_label.config(image=photo1)
@@ -381,6 +381,10 @@ class Game:
         root.destroy()
 
 
+    def help(self):
+        get_help = Help(self)
+        get_help.help_text.configure(text="Help text goes here...")
+
 class Help:
     def __init__(self, partner):
 
@@ -431,6 +435,11 @@ class Help:
                                   width=10, bg="#660000", fg="white",
                                   font="Arial 15 bold")
 
+
+    def close_help(self, partner):
+        # Put help button back to normal..
+        partner.help_button.config(state=NORMAL)
+        self.help_box.destroy()
 
 class GameStats:
     def __init__(self, partner, game_history, game_stats):
