@@ -260,7 +260,7 @@ class Game:
         # Balance label (row 4)
 
         start_text = "Game Cost: ${} \n "" \nHow much " \
-                     "will you wun?".format(stakes * 5)
+                     "will you win?".format(stakes * 5)
 
         self.balance_label = Label(self.game_frame, font="Arial 12 bold", fg="green",
                                    text=start_text, wrap=300,
