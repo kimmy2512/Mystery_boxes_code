@@ -127,11 +127,29 @@ class GameStats:
 
         # rounds played (row 2.4)
 
+        self.export_dismiss_frame = Frame(self.stats_frame)
+        self.export_dismiss_frame.grid(row=3)
+
+        # Export Button
+        self.export_button = Button(self.export_dismiss_frame, text="Export",
+                                    font="Arial 12 bold",
+                                    command=lambda: self.export(game_history))
+        self.export_button.grid(row=0, column=0)
+
+        # Dismiss button
+        self.dismiss_button = Button(self.export_dismiss_frame, text="Dismiss",
+                                     font="Arial 12 bold",
+                                     command=partial(self.close_stats, partner))
+        self.dismiss_button.grid(row=0, column=1)
+
 
     def close_stats(self, partner):
         # Put history button back to normal..
         partner.stats_button.config(state=NORMAL)
         self.stats_box.destroy()
+
+    def export(self, game_history):
+        print("you pushed export")
 
 # main routine
 if __name__ == "__main__":

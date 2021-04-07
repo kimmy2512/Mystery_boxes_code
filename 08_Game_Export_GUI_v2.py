@@ -5,7 +5,7 @@ from functools import partial    # To prevent unwanted windows
 import random
 
 class Game:
-    def __init__(self, partner, stakes, starting_balance):
+    def __init__(self, stakes=1, starting_balance=50):
         print(stakes)
         print(starting_balance)
 
@@ -409,4 +409,9 @@ class Export:
 
 
 
-
+# main routine
+if __name__ == "__main__":
+    root = Tk()
+    root.title("title goes here")
+    something = Game()
+    root.mainloop()
