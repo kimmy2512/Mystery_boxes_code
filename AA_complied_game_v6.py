@@ -278,8 +278,12 @@ class Game:
 
         self.stats_button = Button(self.help_export_frame, text="Game Stats...",
                                    font="Arial 15 bold",
-                                   bg="#003366", fg="white")
+                                   bg="#003366", fg="white",
+                                   command=lambda: self.to_stats(self.round_stats_list,
+                                                                 self.game_stats_list))
         self.stats_button.grid(row=0, column=1, padx=2)
+
+        self.stats_button.config(state=DISABLED)
 
         # Quit Button
         self.quit_button = Button(self.game_frame, text="Quit", fg="white",
@@ -288,6 +292,10 @@ class Game:
         self.quit_button.grid(row=6, pady=10)
 
     def reveal_boxes(self):
+
+        # enable stats button
+        self.stats_button.config(state=NORMAL)
+
         # retrieve the balance from the initial function...
         current_balance = self.balance.get()
         stakes_multiplier = self.multiplier.get()
@@ -377,9 +385,11 @@ class Game:
             self.balance_label.config(fg="#660000", font="Arial 10 bold",
                                       text=balance_statement)
 
+    def to_stats(self, game_history, game_stats):
+        GameStats(self, game_history, game_stats)
+
     def to_quit(self):
         root.destroy()
-
 
     def help(self):
         get_help = Help(self)
@@ -434,7 +444,6 @@ class Help:
         self.dismiss_btn = Button(self.help_frame, text="Dismiss",
                                   width=10, bg="#660000", fg="white",
                                   font="Arial 15 bold")
-
 
     def close_help(self, partner):
         # Put help button back to normal..
@@ -496,7 +505,7 @@ class GameStats:
         # Current Balance (row 2.2)
         self.current_balance_label = Label(self.details_frame,
                                            text="Current Balance:", font=heading,
-                                           acnhor="e")
+                                           anchor="e")
         self.current_balance_label.grid(row=1, column=0, padx=0)
 
         self.current_balance_value_label = Label(self.details_frame, font=content,
