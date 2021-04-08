@@ -386,7 +386,6 @@ class Game:
 
     def help(self):
         get_help = Help(self)
-        get_help.help_text.configure(text="Help text goes here...")
 
 class Help:
     def __init__(self, partner):
@@ -435,7 +434,8 @@ class Help:
         # Dismiss button (row 2)
         self.dismiss_btn = Button(self.help_frame, text="Dismiss",
                                   width=10, bg="#660000", fg="white",
-                                  font="Arial 15 bold")
+                                  font="Arial 15 bold", command=partial(self.close_help, partner))
+        self.dismiss_btn.grid(row=0, column=1)
 
 
     def close_help(self, partner):
