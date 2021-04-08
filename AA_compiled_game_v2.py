@@ -435,7 +435,7 @@ class Help:
         self.dismiss_btn = Button(self.help_frame, text="Dismiss",
                                   width=10, bg="#660000", fg="white",
                                   font="Arial 15 bold", command=partial(self.close_help, partner))
-        self.dismiss_btn.grid(row=0, column=1)
+        self.dismiss_btn.grid(row=3, column=0)
 
 
     def close_help(self, partner):
