@@ -180,7 +180,6 @@ class Start:
             # hide start up window
             root.withdraw()
 
-
 class Game:
     def __init__(self, partner, stakes, starting_balance):
         print(stakes)
@@ -722,3 +721,6 @@ if __name__ == "__main__":
     root.title("Mystery Box Game")
     something = Start(root)
     root.mainloop()
+
+# Make game stats button disabled for first try (no games played)
+# Add game stats in the exported file

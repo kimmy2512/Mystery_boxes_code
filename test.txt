@@ -1,0 +1,17 @@
+Mystery Box
+
+****  Game Statistics ***
+
+Starting Balance: $??.??
+Closing Balance:
+
+You won / lost:
+
+**** Rounds History *****
+
+copper ($3) | copper ($3) | lead ($0) - Cost: $15 
+Payback: $6 | Current Balance: $41
+
+silver ($6) | copper ($3) | copper ($3) - Cost: $15 
+Payback: $12 | Current Balance: $38
+
