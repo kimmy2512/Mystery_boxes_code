@@ -437,7 +437,6 @@ class Help:
                                   font="Arial 15 bold", command=partial(self.close_help, partner))
         self.dismiss_btn.grid(row=3, column=0)
 
-
     def close_help(self, partner):
         # Put help button back to normal..
         partner.help_button.config(state=NORMAL)
