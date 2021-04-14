@@ -273,33 +273,21 @@ class Game:
         self.help_button = Button(self.help_export_frame, text="Help / Rules",
                                   font="Arial 15 bold",
                                   bg="#808080", fg="white", command=self.help)
-        self.help_button.grid(row=0, column=0, padx=2)
+        self.help_button.grid(row=0, column=0, padx=2, pady=10)
 
 
 
 
-        
+
 
         # Make game stats button disabled for first try (no games played)
         self.stats_button = Button(self.help_export_frame, text="Game Stats...",
                                    font="Arial 15 bold",
                                    bg="#003366", fg="white",
                                    command=lambda: self.to_stats(self.round_stats_list, self.game_stats_list))
-        self.stats_button.grid(row=0, column=1, padx=2)
+        self.stats_button.grid(row=0, column=1, padx=2, pady=10)
 
-        if self.round_stats_list < 2:
-            self.stats_button.config(state=DISABLED)
-
-        else:
-            self.stats_button.config(state=NORMAL)
-
-
-
-
-
-
-
-
+        self.stats_button.config(state=DISABLED)
 
         # Quit Button
         self.quit_button = Button(self.game_frame, text="Quit", fg="white",
@@ -381,6 +369,7 @@ class Game:
                                      5 * stakes_multiplier, round_winnings,
                                      current_balance)
         self.round_stats_list.append(round_summary)
+        self.stats_button.config(state=NORMAL)
         # print(self.round_stats_list)
 
         # Edit label so user can see their balance
@@ -557,7 +546,7 @@ class GameStats:
 
         # Export dismiss frame
         self.export_dismiss_frame = Frame(self.stats_frame)
-        self.export_dismiss_frame.grid(row=3)
+        self.export_dismiss_frame.grid(row=3, pady=10)
 
         # Export Button
         self.export_button = Button(self.export_dismiss_frame, text="Export",
@@ -694,6 +683,12 @@ class Export:
             f = open(filename, "w+")
 
             f.write("Mystery Box\n\n")
+
+            # Put game stats
+
+
+
+
 
             # add new line at end of each item
             for item in calc_history:
